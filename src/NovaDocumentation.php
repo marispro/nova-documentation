@@ -2,6 +2,7 @@
 
 namespace Dniccum\NovaDocumentation;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;
 
@@ -26,5 +27,8 @@ class NovaDocumentation extends Tool
     public function renderNavigation()
     {
         return view('nova-documentation::navigation');
+    }
+    public function menu(Request $request){
+
     }
 }
